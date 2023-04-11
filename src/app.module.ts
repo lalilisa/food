@@ -14,10 +14,7 @@ import { DeviceToken } from './core/entities/token/device_token.entity';
 import { User } from './core/entities/user/user.entity';
 import { UserLikePost } from './core/entities/user/user_like_post.entity';
 import { ConfigModule } from '@nestjs/config';
-import { AccountController } from './account/account.controller';
-import { AccountService } from './account/account.service';
-import { AccountModule } from './account/account.module';
-const modules=[AccountModule]
+const modules=[]
 @Module({
   imports: [...modules,
     ConfigModule.forRoot({

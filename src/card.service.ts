@@ -10,7 +10,6 @@ export class CardService {
     @InjectRepository(Card)
     private cardRespository: Repository<Card>,
   ) {}
-
   async createCard(createCard: CreateCardDto) {
     console.log(createCard);
     await this.cardRespository.save(createCard);
